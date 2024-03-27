@@ -559,13 +559,21 @@ footer .info .section-info p {
     padding-left: 20px;
 }
 
-footer .info .section-info ul li {
+footer .info .section-info ul li,
+footer .info .section-info ul li a {
     color: #FFF;
     font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+footer .info .section-info ul li a:hover {
+    color: #DAF7A6;
+}
+
+footer .info .section-info ul li {
     padding-left: 20px;
 }
 
