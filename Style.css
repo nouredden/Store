@@ -27,6 +27,35 @@ a {
     color: white;
 }
 
+#navbar2 {
+    background-color: #333;
+    /* Black background color */
+    position: fixed;
+    /* Make it stick/fixed */
+    top: -50px;
+    /* Hide the navbar2 50 px outside of the top view */
+    width: 100%;
+    /* Full width */
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar2 links */
+#navbar2 a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#navbar2 a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
 .btn {
     display: inline-block;
     padding: 15px 30px;
@@ -54,7 +83,7 @@ a {
 }
 
 .container {
-    width: 1141px;
+    max-width: 1141px;
     margin: auto;
 }
 
@@ -366,8 +395,9 @@ header * {
 }
 
 #Products-Categories .Categories-content {
+    margin: auto;
     display: flex;
-    width: 1141px;
+    width: 100%;
     align-items: flex-start;
     align-content: flex-start;
     gap: 40px 32px;
@@ -375,7 +405,7 @@ header * {
 }
 
 #Products-Categories .Categories-content .Category {
-    width: 554.5px;
+    width: 48%;
     height: 360px;
     flex-shrink: 0;
     padding: 20px 0 0 20px;
@@ -604,7 +634,12 @@ footer .info .section-info ul li i {
 
 /* Footer End */
 /* Responsive Start */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1023px) {
+    .container {
+        max-width: 800px;
+
+    }
+
     .btn-primary {
         color: white;
         background: #097969;
@@ -728,7 +763,7 @@ footer .info .section-info ul li i {
     /* briefing Start */
 
     #briefing .container {
-        width: 920px;
+        max-width: 720px;
 
     }
 
@@ -803,7 +838,11 @@ footer .info .section-info ul li i {
     /* Footer End */
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
+    .container {
+        max-width: 600px;
+        margin: auto;
+    }
 
     #products .title h2,
     #Products-Categories .title h2,
